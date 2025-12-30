@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CODING DASAR</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<style>
+*{
+  box-sizing:border-box;
+  font-family:Poppins, Helvetica, sans-serif;
+}
+body{
+  margin:0;
+  background: linear-gradient(135deg, #000, #071833 0%, #071022 100%);
+  color:#1e293b;
+}
+header{
+  background:rgba(255,255,255,0.02);
+  color:white;
+  padding:10px;
+  border-radius: 0 0 15px 15px;
+}
+header h1{
+      margin:0;
+      font-size:20px;
+      font-weight:700;
+    }
+.container{
+  padding:15px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+@media(max-width:900px){
+  .container{grid-template-columns:1fr}
+}
+.box{
+  color:#ffffff;
+  background:rgba(255,255,255,0.02);
+  border-radius:8px;
+  padding:15px;
+  backdrop-filter: blur(5px);
+  border:1px solid #071022;
+}
+.box h2{
+  margin-top:0;
+  font-size:18px;
+  color:#1e40af;
+}
+  .zhar {
+    margin-top:0;
+  font-size:18px;
+  color:#ff9800;
+}
+label{
+  display:block;
+  margin-top:10px;
+}
+input{
+  width:100%;
+  padding:8px;
+  margin-top:5px;
+}
+textarea{
+  width:100%;
+  height:280px;
+  font-family:monospace;
+  margin-top:10px;
+  background:#333;
+  color:#fff;
+  border-radius:15px;
+  border:1px solid #333;
+}
+button{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  background:#16a34a;
+  color:white;
+  border:none;
+  border-radius:25px;
+  font-size:15px;
+  cursor:pointer;
+}
+.zharBtn {
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  background:linear-gradient(135deg,#06b6d4,#7c9bf0);
+  color:white;
+  border:none;
+  border-radius:25px;
+  font-size:15px;
+  cursor:pointer;
+}
+.zharBtn:hover {
+  background: #1e40af;
+}
+.kontak {
+  background: #25D366;
+  border-radius: 50px;
+  width: 50px;
+}
+.kontak a {
+  text-decoration: none;
+  color: #fff;
+}
+iframe{
+  width:100%;
+  height:320px;
+  border:1px solid #cbd5f5;
+  margin-top:10px;
+  border-radius:15px;
+}
+footer{
+  text-align:center;
+  padding:10px;
+  font-size:13px;
+  color:#64748b;
+}
+.task{
+  background:#333;
+  border-left:4px solid #2563eb;
+  padding:10px;
+  border-radius:15px;
+  margin-top:10px;
+}
+  .task1{
+  background:rgba(255,255,255,0.05);
+  border-left:4px solid #2563eb;
+  padding:10px;
+  border-radius:15px;
+  margin-top:10px;
+}
+  .task2{
+  background:rgba(255,255,255,0.05);
+  border-left:4px solid #ef4444;
+  padding:10px;
+  border-radius:15px;
+  margin-top:10px;
+}
+video{
+  border-radius:6px;
+  border:1px solid #cbd5f5;
+  background:#000;
+}
+  h3 {
+    text-align:center;
+  }
+  pre {
+      background: #2d2d2d;
+      color: #eee;
+      padding: 12px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 14px;
+    }
+  #audioBtn{
+  position:fixed;
+  bottom:18px;
+  right:18px;
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  border:none;
+  background:#1e40af;
+  color:white;
+  font-size:18px;
+  cursor:pointer;
+  box-shadow:0 8px 20px rgba(30,64,175,.35);
+  transition:.25s;
+  z-index:999;
+}
+
+#audioBtn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 12px 28px rgba(30,64,175,.45);
+}
+
+#audioBtn:active{
+  transform:scale(.92);
+}
+  
+.card-title{
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color:#f87171;
+}
+  
+.card-text{
+  font-size: 14px;
+  line-height: 1.6;
+  color: rgba(255,255,255,.85);
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1><i class="fas fa-code"> </i> yuk ngoding</h1>
+</header>
+  
+  <!-- AUDIO BACKGROUND -->
+<audio id="bgAudio" autoplay loop muted>
+  <source src="materi.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+<!-- IDENTITAS -->
+<div class="box">
+  <h2>zharWeb</h2>
+  <h3>BELAJAR BARENG ZHAR</h3>
+</div>
+
+<!-- KOMPETENSI -->
+<div class="box">
+  <h2>ᏦϴᎷᏢᎬͲᎬΝՏᏆ ᎠᎪՏᎪᎡ</h2>
+  <ul>
+    <li>Menerapkan struktur HTML</li>
+    <li>Membuat halaman web sederhana</li>
+    <li>Menampilkan hasil sesuai instruksi</li>
+  </ul>
+</div>
+
+<!-- MATERI -->
+<div class="box">
+  <h2>ᎷᎪͲᎬᎡᏆ ՏᏆΝᏀᏦᎪͲ</h2>
+  <p align="justify"><b>HTML / (HyperText Markup Language)</b> adalah bahasa standar untuk membuat struktur halaman web. HTML menggunakan tag untuk menandai elemen seperti teks, gambar, link, tabel, dan lainnya, 
+    HTML di ciptakan oleh tim berners lee pada tahun 1991. HTML memiliki struktur sebagai berikut: </p>
+  <div class="task1">
+    <ol>
+      <li><code>&lt;html&gt;</code></li>
+      <li><code>&lt;head&gt;</code></li>
+      <li><code>&lt;title&gt;</code></li>
+      <li><code>&lt;body&gt;</code></li>
+    </ol>
+  </div>
+  <p align="justify">deklarasi yang di gunakan dalam html5 adalah &lt;!DOCTYPE html&gt;, perlu di ketahui deklarasi &lt;!DOCTYPE&gt; gak bersifat case-sensitive jadi bisa ditulis pake huruf besar maupun kecil. fungsi &lt;!DOCTYPE&gt; adalah untuk memberitahu 
+    ke browser tentang versi html yang di gunakan dalam dokumen tersebut.</p>
+  
+  <h1>MATERI DASAR</h1>
+  <b class="zhar">1. TAG HEADING</b>
+  <p align="justify">tag heading/judul, menyediakan 6 buah tag 
+    yaitu h1-h6, h1 merupakan ukuran text yang paling besar dan h6 adalah ukuran text yang paling kecil.</p>
+  <div class="task1">
+    <ul type="circle">
+      <li><code>&lt;h1&gt;</code></li>
+      <li><code>&lt;h2&gt;</code></li>
+      <li><code>&lt;h3&gt;</code></li>
+      <li><code>&lt;h4&gt;</code></li>
+      <li><code>&lt;h5&gt;</code></li>
+      <li><code>&lt;h6&gt;</code></li>
+    </ul>
+    contoh penulisan nya <br> &lt;h1&gt;hello world&lt;/h1&gt;
+  </div>
+  <br>
+  <b class="zhar">2. TAG PARAGHRAF</b>
+  <p align="justify">tag paraghrap di gunakan untuk menuliskan text biasa, tag &lt;p&gt; dapat dikolaburasikan 
+    dengan nilai-nilai berikut :
+  </p>
+  <div class="task1">
+    <ul type="circle">
+      <li>center</li>
+      <li>justify</li>
+      <li>left</li>
+      <li>right</li>
+    </ul>
+    contoh penggunaanya : <br>
+    &lt;p align="center"&gt; halo sobat ngoding &lt;/p&gt;
+  </div>
+  <br>
+  <b class="zhar">3. TAG &lt;a&gt;</b>
+  <p align="justify">tag &lt;a&gt; adalah tag untuk membuat link, tag ini dapat di gabung dengan gambar.</p>
+  <div class="task1">
+    &lt;a href="https://www.contoh.com"&gt;klik ini &lt;/a&gt; <br><br>
+    jika di gabungkan dengan gambar seperti ini <br><br>
+    &lt;a href="https://www.contoh.com"&gt; <br>
+     &lt;img src="contoh.jpg"&gt; <br>&lt;/a&gt;
+  </div>
+  <br>
+  <b class="zhar">4. TAG BOLD</b>
+  <p align="justify">tag bold adalah untuk membuat text menjadi tebal</p>
+  <div class="task1">
+    contoh penulisan nya seperti ini
+    <br> &lt;b&gt; contoh &lt;/b&gt;
+  </div>
+  <br>
+  <b class="zhar">5. TAG ITALIC</b>
+  <p align="justify">tag italic adalah tag untuk membuat text menjadi miring</p>
+  <div class="task1">
+    contoh penulisan nya <br>
+    &lt;i&gt; contoh &lt;/i&gt;
+  </div>
+  <br>
+  <b class="zhar">6. TAG UNDERLINE</b>
+  <p align="justify">tag underline adalah untuk membuat text bergaris bawah</p>
+  <div class="task1">
+    contoh penulisan nya <br>
+    &lt;u&gt; contoh &lt;/u&gt;
+  </div>
+  <br>
+  <b class="zhar">7. TAG TABEL</b>
+  <p align="justify">tag ini di gunakan untuk membuat tabel, 
+    Elemen tabel berisi property &lt;tr&gt; untuk menentukan baris (table row) yang di dalam nya terdapat property &lt;td&gt; 
+      untuk menampilkan data pada setiap cell tabel. untuk mendefinisikan table heading atau yang biasa di sebut judul tiap kolom menggunakan tag &lt;th&gt;...&lt;/th&gt;.
+  </p>
+  <div class="task1">
+    &lt;table&gt; <br>
+    &lt;tr&gt;<br>
+     &lt;th&gt; no &lt;/th&gt;<br>
+     &lt;th&gt; nama &lt;/th&gt;<br>
+     &lt;th&gt; alamat &lt;/th&gt;<br>
+    &lt;/tr&gt;<br>
+    &lt;tr&gt;<br>
+     &lt;td&gt; 1 &lt;/td&gt;<br>
+     &lt;td&gt; zhar &lt;/td&gt;<br>
+     &lt;td&gt; tangerang &lt;/td&gt; <br>
+    &lt;/tr&gt;<br>
+    &lt;/table&gt;
+  </div>
+  <h1>TAG-TAG INPUT TYPE</h1>
+  <b class="zhar">8. TAG INPUT TYPE TEXT</b>
+  <p align="justify">tipe masukan text adalah jenis input yang digunakan untuk menerima 
+    input dalam bentuk text atau karakter, contoh penggunaan nya 
+    adalah untuk mengumpulkan informasi seperti nama, username, 
+    atau input berupa text lain nya, contoh :</p>
+  <div class="task1">
+    username : <br>
+    &lt;input type="text" name="nama" placeholder="masukan username/nama"&gt;
+  </div>
+  <br>
+  <b class="zhar">9. TAG INPUT TYPE PASSWORD</b>
+  <p align="justify">tipe masukan password adalah jenis input yang 
+    digunakan untuk menerima input 
+    dalam bentuk text atau karakter 
+    dan akan tersensor secara otomatis, contoh :</p>
+  <div class="task1">
+    password :<br>
+    &lt;input type="password" name="pass" placeholder="masukan password"&gt;
+  </div>
+  <br>
+  <b class="zhar">10. TAG INPUT TYPE BUTTON</b>
+  <p align="justify">tag input tipe ini adalah untuk membuat sebuah tombol</p>
+  <div class="task1">
+    &lt;input type="button" value="login"&gt; <br><br>
+    tag tombol ini meiliki dua cara untuk membuat tombol cara ke dua seperti ini <br><br>
+    &lt;button&gt; login &lt;/button&gt;
+  </div>
+</div>
+
+<div class="box">
+  <h2>ᏙᏆᎠᎬϴ ͲႮͲϴᎡᏆᎪᏞ </h2>
+
+  <video controls poster="https://i.imgur.com/MIPwS7U.jpeg" width="100%" autoplay>
+    <source src="tutorCoding.mp4" type="video/mp4">
+    Browser tidak mendukung video.
+  </video>
+
+  <p style="font-size:13px;color:#64748b">
+    <i class="fa-solid fa-info-circle"> </i> Cara ngoding di hp
+  </p>
+</div>
+  
+  <!-- soal -->
+   <div class="box">
+     <h2>SOAL</h2>
+    <p>1. tag apa yang di gunakan untuk judul?</p>
+    <button class="zharBtn" onclick="alert('benar')">&lt;h1&gt; - &lt;h6&gt;</button>
+    <button class="zharBtn" onclick="alert('salah')">&lt;img&gt;</button>
+     <p>2. deklarasi html5 adalah?</p>
+     <button class="zharBtn" onclick="alert('benar')">&lt;!DOCTYPE html&gt;</button>
+     <button class="zharBtn" onclick="alert('salah')">&lt;!DOTIPE html&gt;</button>
+     <p>3. manakah struktur html yang benar?</p>
+     <button class="zharBtn" onclick="alert('salah')">html, head, body, title</button>
+     <button class="zharBtn" onclick="alert('benar')">html, head, title, body</button>
+     <p>4. html singkatan dari?</p>
+     <button class="zharBtn" onclick="alert('benar')">hyper text marqup language</button>
+     <button class="zharBtn" onclick="alert('salah')">hyper text marquee language</button>
+     <p>5. pada tahun berapa html diciptakan?</p>
+     <button class="zharBtn" onclick="alert('salah')">1941</button>
+     <button class="zharBtn" onclick="alert('benar')">1991</button>
+     <p>6. html diciptakan oleh?</p>
+     <button class="zharBtn" onclick="alert('benar')">team berners lee</button>
+     <button class="zharBtn" onclick="alert('salah')">jokowi</button>
+     <p>7. tag untuk membuat text miring adalah?</p>
+     <button class="zharBtn" onclick="alert('salah')">&lt;u&gt;</button>
+     <button class="zharBtn" onclick="alert('benar')">&lt;i&gt;</button>
+     <p>8. tag untuk membuat text menjadi tebal adalah?</p>
+     <button class="zharBtn" onclick="alert('salah')">&lt;i&gt;</button>
+     <button class="zharBtn" onclick="alert('benar')">&lt;b&gt;</button>
+     <p>9. tipe untuk memasukan nama adalah?</p>
+     <button class="zharBtn" onclick="alert('benar')">&lt;input type="name" name="nama"&gt;</button>
+     <button class="zharBtn" onclick="alert('salah')">&lt;input type="button" value="login"&gt;</button>
+     <p>10. tipe untuk memasukan password adalah?</p>
+     <button class="zharBtn" onclick="alert('benar')">&lt;input type="password" name="pass"&gt;</button>
+     <button class="zharBtn" onclick="alert('salah')">&lt;input type="name" name="nama"&gt;</button>
+     <p>11. tag untuk membuat heading pada tabel adalah?</p>
+     <button class="zharBtn" onclick="alert('benar')">&lt;th&gt;</button>
+     <button class="zharBtn" onclick="alert('salah')">&lt;td&gt;</button>
+   </div>
+  
+<!-- TUGAS -->
+<div class="box">
+  <h2>ͲႮᏀᎪՏ</h2>
+  <div class="task">
+    Buatlah sebuah halaman web sederhana dengan ketentuan:
+    <ol>
+      <li>memiliki judul</li>
+      <li>memiliki tulisan bergaris bawah</li>
+      <li>memiliki tulisan miring</li>
+      <li>memiliki tulisan bold</li>
+      <li>Memiliki tipe nama</li>
+      <li>Memiliki tipe password</li>
+      <li>Terdapat satu tombol</li>
+    </ol>
+  </div>
+</div>
+  
+<!-- PRAKTEK -->
+<div class="box">
+  <h2>ᎪᎡᎬᎪ ᏢᎡᎪᏦͲᏆᏦ</h2>
+  <p>klik "jalankan" untuk melihat hasilnya</p>
+<textarea id="code">
+<!DOCTYPE html>
+<html>
+<head>
+  <title> </title>
+</head>
+<body>
+  <!--tulis content disini-->
+  
+</body>
+</html>
+</textarea>
+
+<button onclick="run()">Jalankan Hasil</button>
+</div>
+
+<!-- OUTPUT -->
+<div class="box">
+  <h2>ᎻᎪՏᏆᏞ</h2>
+  <iframe id="output"></iframe>
+</div>
+  
+  <div class="box">
+    <h1>developer</h1>
+  <div class="task2">
+    <h4 class="card-title">KEBIJAKAN PRIVASI</h4>
+    <p class="card-text">
+      Tools ini bersifat transparan dan <b>tidak mengambil data pribadi</b>.
+      Keamanan Anda adalah prioritas kami.
+    </p>
+    <button class="kontak"><a href="https://wa.me/628567928153"><i class="fa-brands fa-whatsapp"> </i></a></button>
+  </div>
+  </div>
+</div>
+
+<footer>
+  &copy;zhar website 2025
+</footer>
+
+  <!-- TOMBOL AUDIO -->
+<button id="audioBtn" onclick="toggleAudio()">
+  <i class="fa-solid fa-volume-high"> </i>
+</button>
+  
+<script>
+function run(){
+  document.getElementById("output").srcdoc =
+    document.getElementById("code").value;
+}
+run();
+ 
+const audio = document.getElementById("bgAudio");
+let audioOn = false;
+
+function toggleAudio(){
+  if(!audioOn){
+    audio.muted = false;
+    audio.play();
+    audioOn = true;
+  }else{
+    audio.muted = true;
+    audioOn = false;
+  }
+}
+</script>
+
+</body>
+</html>
